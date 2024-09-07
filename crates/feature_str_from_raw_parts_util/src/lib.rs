@@ -1,6 +1,6 @@
 #![feature(str_from_raw_parts)]
 
-// component
+// comment
 use core::str::from_raw_parts;
 
 /// # Safety
