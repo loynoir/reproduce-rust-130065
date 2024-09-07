@@ -1,0 +1,17 @@
+[package]
+name = "hub_util"
+version = "0.1.0"
+edition.workspace = true
+
+[dependencies]
+component_util = { workspace = true, optional = true }
+feature_str_from_raw_parts_util = { workspace = true, optional = true }
+
+[features]
+default = [
+    "component_util/feature_str_from_raw_parts_util",
+    "feature_str_from_raw_parts_util",
+]
+
+component_util = ["dep:component_util"]
+feature_str_from_raw_parts_util = ["dep:feature_str_from_raw_parts_util"]

@@ -1,0 +1,16 @@
+[workspace.package]
+edition = "2021"
+
+[workspace]
+resolver = "2"
+
+members = [
+    "crates/component_util",
+    "crates/feature_str_from_raw_parts_util",
+    "crates/hub_util",
+]
+
+[workspace.dependencies]
+component_util = { path = "crates/component_util", default-features = false }
+feature_str_from_raw_parts_util = { path = "crates/feature_str_from_raw_parts_util", default-features = false }
+hub_util = { path = "crates/hub_util", default-features = false }
